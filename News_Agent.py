@@ -13,15 +13,6 @@ response = model.generate_content("Hello, how are you?")
 #print(response.text)
 
 from crewai import Agent, Task, Crew, LLM
-
-agent = Agent(
-  role = "Motivational Speaker",
-  goal = "Create an inspirational LinkedIn post for job seekers",
-  backstory = "An experienced career mentor who inspires others through writing.",
-  llm = LLM(model="gemini/gemini-2.0-flash",api_key=api_key)
-)
-
-from crewai import Agent, Task, Crew, LLM
 from crewai_tools import FirecrawlSearchTool
 
 

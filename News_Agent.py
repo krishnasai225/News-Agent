@@ -1,7 +1,7 @@
 import os
 import google.generativeai as genai
 
-# Set your Gemini API key as an environment variable
+# Set your Gemini API key and firecrawl API key as an environment variable
 api_key = os.getenv("GEMINI_API_KEY")
 firecrawl_api_key = os.getenv("FIRECRAWL_API_KEY")
 genai.configure(api_key=api_key)
